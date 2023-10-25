@@ -1,0 +1,124 @@
+@import url(normalize.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+body{
+    font-size: 12px;
+    font-family: Roboto;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+.titular{
+    font-size: 24px;
+    text-align: center;
+}
+
+.precio{
+    font-size: 18px;
+}
+
+.descuento{
+    font-size: 16px;
+}
+
+.descripcion{
+    font-size: 16px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+ul {
+    padding: 0;
+}
+
+.producto{
+    text-align: center;
+}
+
+.producto img{
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+#logo{
+    width: 50%;
+    padding: 20px;
+} 
+
+header p{
+    text-align: center;
+}
+
+#banner{
+    background-color: white;
+}
+
+#banner img{
+    width: 100%;
+}
+
+.burger-menu{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+}
+
+.burger-menu div{
+    background-color: blue;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+.search-bar{
+    margin-left: 20px;
+}
+
+.search-bar input{
+    width: 50%;
+}
+
+footer{
+    text-align: center;
+    background-color: white;
+}
+
+footer .icono{
+    font-size: 2rem;
+    color: #1259c3;
+}
+
+footer h4{
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+footer p {
+    color: #666;
+    margin-top: 0px;
+}
+
+footer section {
+    margin-top: 50px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#copyright{
+    margin-top: 40px;
+    margin-left: 20px;
+    text-align: left;
+}
