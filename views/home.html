@@ -7,29 +7,39 @@
     <title>Mercado liebre</title>
   </head>
   <body>
-    <header>
-      <div id="logo">
+    <header class="main-header">
+      <div class="main-header-top-bar">
         <img
           src="images/logo-mercado-liebre.svg"
           alt="Logo de Mercado Liebre"
+          class="logo"
         />
+        <h2 class="copy-header">
+          <i class="fa-solid fa-hand-holding-dollar"></i>
+          Comprá en coutas y sin tarjeta de crédito
+        </h2>
+        <div class="nav-search">
+          <input
+            class="nav-search-input"
+            type="text"
+            placeholder="Buscar productos, marcas"
+          />
+          <button class="nav-search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
       </div>
-      <div class="search-bar">
-        <input type="text" placeholder="Buscar productos, marcas" />
-        <br />
-        <button><i class="fa-solid fa-magnifying-glass"></i></button>
-      </div>
-      <p>
-        <i class="fa-solid fa-hand-holding-dollar"></i>Comprá en coutas y sin
-        tarjeta de crédito
-      </p>
-      <nav>
-        <ul>
+      <a href="#" class="hamburger-button">
+        <div class="fas fa-bars"></div>
+      </a>
+      <nav class="main-navbar">
+        <ul class="left-navbar">
           <li><a href="#productosOferta">Ofertas</a></li>
           <li><a href="#">Tiendas Oficiales</a></li>
           <li><a href="#">Vender</a></li>
           <li><a href="#">Ayuda</a></li>
-          <br />
+        </ul>
+        <ul class="right-navbar">
           <li>
             <a href="#"
               >Creá tu cuenta <i class="fa-regular fa-address-card"></i
@@ -45,10 +55,7 @@
           </li>
         </ul>
       </nav>
-      <div class="burger-menu">
-        <div class="fas fa-bars"></div>
-      </div>
-      <div id="banner">
+      <div class="banner">
         <img src="images/img-home-banner.jpg" alt="Banner de Mercado Liebre" />
       </div>
     </header>
