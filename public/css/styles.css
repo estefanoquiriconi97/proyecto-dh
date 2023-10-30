@@ -1,13 +1,27 @@
 @import url(normalize.css);
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-size: 12px;
   font-family: Roboto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ebebeb;
 }
 
 .main-header {
   background-color: #eac926;
+}
+
+.main-header-top-bar {
   padding: 20px;
 }
 
@@ -18,6 +32,17 @@ body {
 .copy-header {
   font-weight: 400;
   text-align: center;
+  margin-top: 15px;
+}
+
+#productosVisitados {
+  margin-top: 20px;
+}
+
+#productosOferta h2{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: left;
 }
 
 .hamburger-button {
@@ -30,6 +55,8 @@ body {
   text-align: center;
   font-size: 18px;
   margin: auto;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .main-navbar {
@@ -51,46 +78,110 @@ body {
 }
 
 .nav-search {
-    display: flex;
-    padding: 0px;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .nav-search-input {
-    width: 80%;
-    height: 40px;
-    margin: 0;
-    border-radius: 2px 0px 0px 2px;
-    border-width: 1.5px;
-    box-sizing: border-box;
-    padding: 10px 60px 10px 15px;
-    font-size: 14px;
-    color: rgb(60, 65, 68);
-    background-color: rgb(220, 218, 215);
-    box-shadow: rgba(24, 26, 27, 0.2) 0px 1px 2px 0px;
-    border-color: rgba(24, 26, 27, 0);
-    border: none;
-  }
-  
-  .nav-search-btn {
-    color: rgb(96, 104, 108);
-    background-color: rgb(220, 218, 215);
-    box-shadow: rgba(24, 26, 27, 0.2) 0px 1px 2px 0px;
-    padding: 0;
-    border: none;
-    font-size: 22px;
-    color: #666;
-    border-radius: 0 2px 2px 0;
-    width: 46px;
-    height: 40px;
-    box-sizing: border-box;
-  }
+  display: flex;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.nav-search-input {
+  width: 100%;
+  height: 40px;
+  margin: 0;
+  border-radius: 2px 0px 0px 2px;
+  border-width: 1.5px;
+  box-sizing: border-box;
+  padding: 10px 60px 10px 15px;
+  font-size: 14px;
+  color: rgb(60, 65, 68);
+  background-color: rgb(220, 218, 215);
+  box-shadow: rgba(24, 26, 27, 0.2) 0px 1px 2px 0px;
+  border-color: rgba(24, 26, 27, 0);
+  border: none;
+}
+
+.nav-search-btn {
+  color: rgb(96, 104, 108);
+  background-color: rgb(220, 218, 215);
+  box-shadow: rgba(24, 26, 27, 0.2) 0px 1px 2px 0px;
+  padding: 0;
+  border: none;
+  font-size: 22px;
+  color: #666;
+  border-radius: 0 2px 2px 0;
+  width: 46px;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  background-color: white;
+}
+
+.producto img {
+  width: 100%;
+}
+
+article div {
+  padding: 15px;
+  border-top: 1px solid #ebebeb;
+  width: 100%;
+}
+
+.logo-envio {
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: green solid 1px;
+  padding: 3px;
+}
+
+.logo-envio i {
+  color: green;
+}
+
+.titular {
+  font-size: 24px;
+  text-align: center;
+}
+
+.precio {
+  font-size: 18px;
+}
+
+.descuento {
+  font-size: 16px;
+  color: green;
+}
+
+.banner img {
+  width: 100%;
+}
+.descripcion {
+  font-size: 16px;
+  display: none;
+}
+.banner {
+  background-color: #ebebeb;
+}
 
 @media (min-width: 768px) {
   .main-header-top-bar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .copy-header {
@@ -114,6 +205,15 @@ body {
   .main-navbar li {
     margin: 0 5px;
   }
+
+  .descripcion {
+    display: block;
+  }
+
+  article{
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+  }
+
 }
 
 @media (min-width: 1200px) {
@@ -134,57 +234,16 @@ body {
     font-size: 19px;
   }
 
-  .main-navbar {
-    margin-top: 20px;
-  }
-
   .copy-header {
     max-width: none;
     font-size: 18px;
     font-weight: 400;
     margin: 0;
   }
-
-  .main-header-top-bar {
-    align-items: center;
-  }
-}
-
-.titular {
-  font-size: 24px;
-  text-align: center;
-}
-
-.precio {
-  font-size: 18px;
-}
-
-.descuento {
-  font-size: 16px;
-}
-
-.descripcion {
-  font-size: 16px;
-}
-
-.producto {
-  text-align: center;
-}
-
-.producto img {
-  border-radius: 10px;
-  width: 80%;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-
-.banner img {
-  width: 100%;
 }
 
 footer {
   text-align: center;
-  background-color: white;
 }
 
 footer .icono {
