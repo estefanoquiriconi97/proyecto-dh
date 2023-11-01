@@ -14,41 +14,57 @@ body {
   background-color: #ebebeb;
 }
 
-main{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+main {
   width: 100%;
   padding: 15px;
 }
 
 .main-header {
   background-color: #eac926;
-
 }
 
 .main-header-top-bar {
   padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.logo {
-  width: 200px;
+.header-logo {
+  width: 50%;
+  padding: 10px;
+}
+
+.nav-search{
+  width: 50%;
 }
 
 .copy-header {
-  font-weight: 400;
-  text-align: center;
+  font-weight: 300;
+  font-size: 16px;
   margin-top: 15px;
 }
 
-#productosVisitados {
-  margin-top: 20px;
+.productosVisitados {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
 }
 
-#productosOferta h2 {
-  margin-top: 30px;
-  margin-bottom: 30px;
+.productosOferta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.producto {
+  width: 300px;
+}
+
+.titular {
   text-align: left;
+  font-size: 24px;
+  margin: 15px;
 }
 
 .hamburger-button {
@@ -88,7 +104,6 @@ main{
   padding: 0px;
   justify-content: center;
   align-items: center;
-  margin-top: 15px;
 }
 
 .nav-search-input {
@@ -152,11 +167,6 @@ article div {
   color: green;
 }
 
-.titular {
-  font-size: 24px;
-  text-align: center;
-}
-
 .precio {
   font-size: 18px;
 }
@@ -182,6 +192,11 @@ article div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .header-logo{
+    max-width: 300px;
   }
 
   .copy-header {
@@ -216,9 +231,7 @@ article div {
 }
 
 @media (min-width: 1200px) {
-  .logo {
-    width: 250px;
-  }
+  
   .main-header-top-bar,
   .main-navbar {
     max-width: 1200px;
@@ -230,14 +243,10 @@ article div {
   }
 
   .main-navbar a {
-    font-size: 19px;
-  }
-
-  .copy-header {
-    max-width: none;
     font-size: 18px;
-    font-weight: 400;
-    margin: 0;
+  }
+  .copy-header{
+    font-size: 18px;
   }
 }
 
