@@ -14,9 +14,10 @@ body {
   background-color: #ebebeb;
 }
 
-main {
-  width: 100%;
+.container {
+  width: 90%;
   padding: 15px;
+  margin: auto;
 }
 
 .main-header {
@@ -44,27 +45,23 @@ main {
   margin-top: 15px;
 }
 
-.productosVisitados {
+.productosVisitados, .productosOferta {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin-bottom: 30px;
-}
-
-.productosOferta {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
 }
 
 .producto {
   width: 300px;
+  margin-top: 10px;
 }
 
 .titular {
-  text-align: left;
   font-size: 24px;
-  margin: 15px;
+  color: #666666;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .hamburger-button {
@@ -139,12 +136,11 @@ main {
 .producto {
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
   background-color: white;
 }
 
 .producto img {
-  width: 100%;
+  width: 90%;
 }
 
 .product-desc-box {
@@ -173,7 +169,9 @@ main {
 .descripcion {
   font-size: 16px;
   display: none;
+  color: #666666;
 }
+
 .banner {
   background-color: #ebebeb;
 }
@@ -205,6 +203,17 @@ main {
     flex-wrap: nowrap;
   }
 
+  .productosVisitados, .productosOferta {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .titular{
+    text-align: left;
+  }
+  
   .header-logo{
     max-width: 300px;
   }
