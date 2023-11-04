@@ -33,9 +33,10 @@ body {
 .header-logo {
   width: 50%;
   padding: 10px;
+  max-width: 300px;
 }
 
-.nav-search{
+.nav-search {
   width: 50%;
 }
 
@@ -45,7 +46,8 @@ body {
   margin-top: 15px;
 }
 
-.productosVisitados, .productosOferta {
+.productosVisitados,
+.productosOferta {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -176,7 +178,7 @@ body {
   background-color: #ebebeb;
 }
 
-.product-desc-box > .product-delivery-icon{
+.product-desc-box > .product-delivery-icon {
   display: block;
   font-size: 16px;
   padding: 5px;
@@ -184,14 +186,14 @@ body {
   height: 30px;
   border: 1px solid #39b54a;
   color: #39b54a;
-  background-color: #FFF;
+  background-color: #fff;
   border-radius: 50%;
   position: absolute;
   right: 20px;
   top: -15px;
 }
 
-.product-desc-box{
+.product-desc-box {
   position: relative;
 }
 
@@ -203,19 +205,16 @@ body {
     flex-wrap: nowrap;
   }
 
-  .productosVisitados, .productosOferta {
+  .productosVisitados,
+  .productosOferta {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  .titular{
+  .titular {
     text-align: left;
-  }
-  
-  .header-logo{
-    max-width: 300px;
   }
 
   .copy-header {
@@ -250,7 +249,6 @@ body {
 }
 
 @media (min-width: 1200px) {
-  
   .main-header-top-bar,
   .main-navbar {
     max-width: 1200px;
@@ -264,7 +262,7 @@ body {
   .main-navbar a {
     font-size: 18px;
   }
-  .copy-header{
+  .copy-header {
     font-size: 18px;
   }
 }
