@@ -1,0 +1,77 @@
+h2 {
+  text-align: center;
+  margin: 20px;
+  font-size: 24px;
+}
+
+h3 {
+  margin: 20px 50px;
+  font-size: 1.2rem;
+  align-self: flex-start;
+}
+
+.form-register {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  font-size: 16px;
+  padding: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.control {
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+.intereses {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  margin-left: 50px;
+}
+
+label {
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 10px;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+button {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #0062cc;
+}
