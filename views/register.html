@@ -3,18 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Registro</title>
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/register.css" />
   </head>
   <body>
     <header class="main-header">
       <div class="main-header-top-bar">
-        <img
-          src="images/logo-mercado-liebre.svg"
-          alt="Logo de Mercado Liebre"
-          class="header-logo"
-        />
+        <a class="header-logo" href="/">
+          <img
+            src="images/logo-mercado-liebre.svg"
+            alt="Logo de Mercado Liebre"
+          />
+        </a>
         <form class="nav-search">
           <input
             class="nav-search-input"
@@ -47,7 +48,9 @@
             ></a>
           </li>
           <li>
-            <a href="#">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a>
+            <a href="/login"
+              >Ingresá <i class="fa-solid fa-right-to-bracket"></i
+            ></a>
           </li>
           <li>
             <a href="#"
@@ -59,7 +62,7 @@
     </header>
     <main>
       <form action="" method="POST" class="form-register">
-        <h2>Formulario de registrado</h2>
+        <h1 class="register-title">Registro</h1>
         <input
           class="control"
           type="text"
@@ -83,8 +86,13 @@
           id="email"
           placeholder="E-mail"
         />
-        <h3>Fecha de nacimiento</h3>
-        <input class="control" type="date" name="fechaNacimiento" id="fechaNacimiento" />
+        <h3 class="register-subtitle">Fecha de nacimiento</h3>
+        <input
+          class="control"
+          type="date"
+          name="fechaNacimiento"
+          id="fechaNacimiento"
+        />
         <input
           class="control"
           type="text"
@@ -92,12 +100,12 @@
           id="domicilio"
           placeholder="Domicilio"
         />
-        <h3>Perfil del usuario</h3>
+        <h3 class="register-subtitle">Perfil del usuario</h3>
         <label
           ><input type="radio" name="perfil" /> Comprador
           <input type="radio" name="perfil" /> Vendedor</label
         >
-        <h3>Intereses</h3>
+        <h3 class="register-subtitle">Intereses</h3>
         <div class="intereses">
           <label for="electro"
             ><input type="checkbox" name="intereses" id="electro" />
@@ -118,47 +126,50 @@
             sana</label
           >
         </div>
+        <br />
+        <h3 class="register-subtitle">Foto del usuario</h3>
         <input type="file" name="imagen" id="imagen" />
-
         <input class="control" type="password" placeholder="Contraseña" />
-        <input class="control" type="password" placeholder="Confirmar contraseña" />
+        <input
+          class="control"
+          type="password"
+          placeholder="Confirmar contraseña"
+        />
 
-        <button type="submit">Enviar</button>
-        <button type="reset">Borrar</button>
+        <button class="register-submit-btn" type="submit">Enviar</button>
+        <button class="register-reset-btn" type="reset">Borrar</button>
       </form>
     </main>
     <footer>
-      <section>
-        <div class="icono">
-          <i class="fa-solid fa-credit-card"></i>
-        </div>
-        <h4>Pagá con tarjeta o en efectivo</h4>
-        <p>
-          Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivo
-          en puntos de pago. ¡Y siempre seguro!
-        </p>
-      </section>
-      <section>
-        <div class="icono">
-          <i class="fa-solid fa-gift"></i>
-        </div>
-        <h4>Envío gratis desde $2500</h4>
-        <p>
-          Solo por estar registrado en Mercado Liebre tenés envíos gratis en
-          miles de productos. Es un benegicio de Mercado Puntos.
-        </p>
-      </section>
-      <section>
-        <div class="icono">
-          <i class="fa-solid fa-user-shield"></i>
-        </div>
-        <h4>Seguridad de principio a fin</h4>
-        <p>
-          ¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas
-          hacer porque estás siempre protegid@.
-        </p>
-      </section>
-      <p id="copyright">Copyright &copy; 1999-2020 MercadoLiebre S.R.L</p>
+      <div class="footer-info">
+        <section>
+          <i class="fa-solid fa-credit-card footer-icon"></i>
+          <h4>Pagá con tarjeta o en efectivo</h4>
+          <p>
+            Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o
+            efectivo en puntos de pago. ¡Y siempre seguro!
+          </p>
+        </section>
+        <section>
+          <i class="fa-solid fa-gift footer-icon"></i>
+          <h4>Envío gratis desde $2500</h4>
+          <p>
+            Solo por estar registrado en Mercado Liebre tenés envíos gratis en
+            miles de productos. Es un benegicio de Mercado Puntos.
+          </p>
+        </section>
+        <section>
+          <i class="fa-solid fa-user-shield footer-icon"></i>
+          <h4>Seguridad de principio a fin</h4>
+          <p>
+            ¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas
+            hacer porque estás siempre protegid@.
+          </p>
+        </section>
+      </div>
+      <div class="footer-copyright">
+        <small>Copyright &copy; 1999-2020 MercadoLiebre S.R.L</small>
+      </div>
     </footer>
   </body>
 </html>

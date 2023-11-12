@@ -1,6 +1,11 @@
 @import url(normalize.css);
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+@import url(animaciones.css);
+
+.fantasma{
+  animation: fantasma 3s infinite;
+}
 
 * {
   box-sizing: border-box;
@@ -121,6 +126,11 @@ body {
   border: none;
 }
 
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
 .nav-search-btn {
   color: rgb(96, 104, 108);
   background-color: rgb(220, 218, 215);
@@ -193,6 +203,12 @@ body {
   top: -15px;
 }
 
+footer{
+  color: #666;
+  margin-top: 0px;
+  background-color: #fff;
+}
+
 .footer-info {
   text-align: center;
   padding: 20px;
@@ -222,11 +238,6 @@ footer h4 {
   font-size: 16px;
   margin-bottom: 5px;
   margin-top: 5px;
-}
-
-footer{
-  color: #666;
-  margin-top: 0px;
 }
 
 .product-desc-box {
@@ -277,12 +288,13 @@ footer{
 
   .descripcion {
     display: block;
-    color: white;
+    opacity: 0;
+    color:#03264c;
     transition: all 500ms;
   }
   
-  .descripcion:hover{
-    color: black;
+  .producto:hover .descripcion{
+    opacity: 1;
   }
 
   .producto{

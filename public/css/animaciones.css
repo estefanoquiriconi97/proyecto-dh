@@ -1,0 +1,12 @@
+@keyframes fantasma {
+  0% {
+    opacity: 20%;
+  }
+  25% {
+    transform: translateY(-10px);
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}

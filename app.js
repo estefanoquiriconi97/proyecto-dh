@@ -18,3 +18,7 @@ app.get('/', (req, res) => {
 app.get("/register", (req, res) => {
     res.sendFile(path.resolve("./views/register.html"))
 })
+app.get("/login", (req, res) => {
+    res.sendFile(path.resolve("./views/login.html"))
+})
+
