@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const port = 3030
+const port = process.env.PORT || 3030
 
 const app = express();
 const publicPath = path.resolve(__dirname, './public');
