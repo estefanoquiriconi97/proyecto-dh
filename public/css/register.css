@@ -23,18 +23,17 @@
 input {
   font-size: 16px;
   padding: 12px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 15px;
   border: none;
 }
 
 .control {
-  margin: 10px 0;
+  margin: 10px;
   padding: 10px;
   border: none;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  width: 100%;
+  width: 80%;
   max-width: 400px;
 }
 
@@ -56,7 +55,7 @@ input[type="checkbox"] {
 }
 
 .register-submit-btn, .register-reset-btn {
-  width: 100%;
+  width: 80%;
   max-width: 400px;
   margin: 10px 5px;
   padding: 10px 20px;
