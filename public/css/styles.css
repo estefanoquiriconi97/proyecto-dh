@@ -199,6 +199,14 @@ input:focus {
   top: -15px;
 }
 
+.product-delivery-icon {
+  transition: all 500ms;
+}
+
+.product-delivery-icon:hover {
+  transform: rotate(-90deg);
+}
+
 footer {
   color: #666;
   margin-top: 0px;
@@ -301,13 +309,6 @@ footer h4 {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
 
-  .product-delivery-icon {
-    transition: all 500ms;
-  }
-
-  .product-delivery-icon:hover {
-    transform: rotate(-90deg);
-  }
 }
 
 @media (min-width: 1200px) {
