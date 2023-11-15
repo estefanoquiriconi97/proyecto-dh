@@ -121,19 +121,19 @@ input:focus {
   margin: auto;
 }
 
-.productosVisitados,
-.productosOferta {
+.visitedProducts,
+.discountedProducts {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.producto {
+.product {
   width: 300px;
   margin-top: 10px;
 }
 
-.titular {
+.heading {
   font-size: 24px;
   color: #666666;
   margin-bottom: 20px;
@@ -141,13 +141,13 @@ input:focus {
   text-align: center;
 }
 
-.producto {
+.product {
   display: flex;
   flex-direction: column;
   background-color: white;
 }
 
-.producto img {
+.product img {
   width: 90%;
 }
 
@@ -162,11 +162,11 @@ input:focus {
   width: 100%;
 }
 
-.precio {
+.price {
   font-size: 18px;
 }
 
-.descuento {
+.discount {
   font-size: 16px;
   color: #39b54a;
 }
@@ -175,7 +175,7 @@ input:focus {
   width: 100%;
 }
 
-.descripcion {
+.description {
   font-size: 16px;
   display: none;
   color: #666666;
@@ -257,15 +257,15 @@ footer h4 {
     flex-wrap: nowrap;
   }
 
-  .productosVisitados,
-  .productosOferta {
+  .visitedProducts,
+  .discountedProducts {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  .titular {
+  .heading {
     text-align: left;
   }
 
@@ -291,22 +291,22 @@ footer h4 {
     margin: 0 5px;
   }
 
-  .descripcion {
+  .description {
     display: block;
     opacity: 0;
     color: #03264c;
     transition: all 500ms;
   }
 
-  .producto:hover .descripcion {
+  .product:hover .description {
     opacity: 1;
   }
 
-  .producto {
+  .product {
     transition: all 300ms;
   }
 
-  .producto:hover {
+  .product:hover {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
 
